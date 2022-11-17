@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center green-text">Forest Fire Prevention</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Forest-Fire Occurence
+        <br>
+        </h5>
+      </div>
+
+    <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+          <label for="first_name"><b>FFMC</b></label>
+          <br>
+          <input placeholder="FFMC Index 18.7-96.20 in FWI system" name="FFMC" id="last_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>DMC</b></label>
+          <br>
+          <input id="last_name" name="DMC" placeholder="DMC Index 1.1-291.3 in FWI system"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>DC</b></label>
+          <br>
+          <input id="last_name" name="DC" placeholder="DC Index 7.9-860.6 in FWI system"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>ISI</b></label>
+          <br>
+          <input id="last_name" name="ISI" placeholder="ISI Index 0.0-56.10 in FWI system"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>Temperature</b></label>
+          <br>
+          <input id="last_name" name="Temperature" placeholder="2.2-33.30 degrees Celcius"  type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>RH</b></label>
+          <br>
+          <input id="_name" name="RH%" placeholder="RH% 15.0-100.0" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>Wind</b></label>
+          <br>
+          <input id="_name" name="Wind km/hr" placeholder="Wind km/hr 0.49-9.40" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>Rain</b></label>
+          <br>
+          <input id="_name" name="Rain" placeholder="Rain mm/m2 0.0-6.4" type="text" class="validate">
+        </div>
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light green">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bio</h5>
+          <!--<p class="grey-text text-lighten-4">I am Sagnik Mukherjee currently a Btech UG student interested in fields of Software Engineering,Machine Learning,Deep Learning</p>-->
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/sagnik-mukherjee-23b21b16a/">LinkedIn</a></li>
+            <li><a class="white-text" href="https://github.com/Sagnik220/Forest-Fire-Prediction">Github</a></li>
+            <li><a class="white-text" href="https://twitter.com/sagnik123451">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12"I am Sagnik Mukherjee a Btech Undergrad,interested in fields of Software Engineering
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
